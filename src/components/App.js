@@ -35,7 +35,21 @@ const App = () => {
     
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+                
+                   <ol>{
+      cityList.map((city)=>{
+        let {name,country}=city;
+       return (
+      
+         name=="Goa" || name=="Amsterdam" || name=="New York" || name=="Darjeeling" || name=="Tokyo" || name=="Lonavala"?
+          
+           ( <li>{name}({country})</li>):null
+         
+       
+   ) }) 
+
+                }
+                </ol>
     </div>
   )
 }
